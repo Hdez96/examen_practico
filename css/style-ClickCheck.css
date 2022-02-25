@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Shadows+Into+Light&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Architects Daughter', cursive;
+}
+
+
+.divTitulo {
+  color:  rgb(0, 0, 0);
+  font-size: 50px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.cajaWrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cajaWrapper .cajaC {
+  -webkit-box-shadow: -1px 2px 16px 9px rgba(0,0,0,0.67); 
+  box-shadow: -1px 2px 16px 9px rgba(0,0,0,0.67);
+  margin: 0 15px;
+  padding: 30px;
+  background-color: #ffff;
+  
+}
+
+.cajaWrapper .cajaC div:first-child{
+  font-size: 32px;
+  width: 400px;
+  height: 200px;
+  line-height: 200px;
+
+}
+
+body {
+  background-image: url("../img/ClickCheck/galaxy.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  color: black;
+}
+
+
+@media only screen and (max-width:1200px) {
+  .main{
+
+      max-width: 60vw;
+      max-height: auto;
+  }
+  .divTitulo {
+      max-width: 60vw;
+  }
+  
+}
+@media only screen and (max-width:800px) {
+
+  .divTitulo {
+    max-width: 65vw;
+    font-size: 30px;
+}
+
+  .main{
+
+      max-width: 65vw;
+      max-height: auto;
+      margin-bottom: 20px;
+  }
+
+} 
